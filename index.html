@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能天气信息面板</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">智能天气信息面板</h1>
+        
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="请输入城市名称" aria-label="城市输入框">
+            <button id="searchButton" class="search-button">
+                <i class="fas fa-search"></i> 查询
+            </button>
+        </div>
+        
+        <div id="weatherContainer" class="weather-container">
+            <!-- 天气信息将在这里显示 -->
+            <div class="weather-placeholder">
+                <i class="fas fa-cloud-sun"></i>
+                <p>输入城市名称并点击查询按钮获取天气信息</p>
+            </div>
+        </div>
+        
+        <div id="errorMessage" class="error-message" style="display: none;">
+            <!-- 错误信息将在这里显示 -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 智能天气信息面板 | 数据来源于OpenWeatherMap</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
